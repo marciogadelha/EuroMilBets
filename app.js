@@ -37,7 +37,7 @@ async function registerBet() {
                 });
                 response2.text().then(function (text) {
                     if (text.search("Success.") == 0) {
-                        const datetime = new Date(data.date)
+                        const datetime = new Date(Date.now())
                         const date = datetime.toLocaleDateString()
                         const time = datetime.toLocaleTimeString()
                         $("#resultStatus").text(data.message)
@@ -56,8 +56,8 @@ async function registerBet() {
                         $("#resultKey").show()
                         const datenow = new Date(Date.now())
                         const objHistory = {
-                            date: datenow.toLocaleDateString(),
-                            time: datenow.toLocaleTimeString(),
+                            date: date,
+                            time: time,
                             accountID: accountID,
                             checkID: data.checkID,
                             key: key
