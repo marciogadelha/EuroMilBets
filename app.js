@@ -39,7 +39,7 @@ async function registerBet() {
                     if (text.search("Success.") == 0) {
                         const datetime = new Date(data.date)
                         const date = datetime.toLocaleDateString()
-                        const time = datetime.toTimeString()
+                        const time = datetime.toLocaleTimeString()
                         $("#resultStatus").text(data.message)
                         $("#resultAccount").text("Account ID: " + accountID)
                         $("#resultAmount").text("Amount: " + amount + "€")
