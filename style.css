@@ -1,0 +1,82 @@
+* {
+	margin: 0px auto;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+body {
+	background-color:#E5EFDD;
+	color: #5b5b5b;
+}
+
+h4 {
+	text-align: center;
+	font-weight: 600;
+	text-decoration: underline;
+    padding-top: 0.5rem;
+}
+
+h5 {
+	text-align: center;
+	font-weight: 500;
+    padding-top: 0.5rem;
+}
+
+#externalFormBox {
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+#formBox {
+	min-width: 240px;
+    max-width: 600px;
+	padding: 0 15px;
+	border-width: 1px;
+	border-color: #5b5b5b;
+	border-style: solid;
+	border-radius: 5px;
+}
+
+.form-group {
+    padding-top: 5px;
+}
+
+#buttonBox {
+	text-align: center;
+}
+
+#registerBetButton {
+    margin: 10px 0;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+#resultStatus, #resultKey {
+    font-weight: bolder;
+}
+
+#resultModalBody {
+    margin: 0;
+    text-align: left;
+}
+
+#historyBox {
+	min-width: 240px;
+    max-width: 600px;
+	padding: 0 15px;
+	border-width: 1px;
+	border-color: #5b5b5b;
+	border-style: solid;
+	border-radius: 5px;
+	text-align: center;
+}
